@@ -1,9 +1,6 @@
-version: "3.8"
-
 services:
   kurban-web:
     build: .
-    container_name: kurban-web
     ports:
       - "8001:80"
     restart: always
