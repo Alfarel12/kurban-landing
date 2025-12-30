@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #2e7d32;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: #e8f5e9;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* BUTTON */
+.btn {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* SECTION */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* PROFILE */
+.profile {
+  background: #f9f9f9;
+}
+
+/* TEAM */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* PRODUCTS */
+.products {
+  background: #f9f9f9;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  width: 260px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* CTA */
+.cta {
+  background: #2e7d32;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
