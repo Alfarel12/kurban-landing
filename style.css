@@ -10,67 +10,12 @@ body {
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbar a {
   color: white;
   margin-left: 15px;
   text-decoration: none;
-}
-
-/* HAMBURGER MENU */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* MOBILE RESPONSIVE */
-@media screen and (max-device-width: 480px) {
-  .navbar nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #2e7d32;
-    flex-direction: column;
-    padding: 20px 0;
-  }
-
-  .navbar nav.active {
-    display: flex;
-  }
-
-  .navbar nav a {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .hamburger {
-    display: flex;
-  }
 }
 
 /* HERO */
