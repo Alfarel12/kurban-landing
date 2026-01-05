@@ -7,60 +7,9 @@ body {
 .navbar {
   background: #2e7d32;
   color: white;
-  padding: 15px 20px;
+  padding: 15px 30px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-#nav-menu {
-  display: flex;
-  gap: 25px;
-}
-
-#nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* === HAMBURGER === */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* === MOBILE MODE === */
-@media (max-width: 768px) {
-  #nav-menu {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #2e7d32;
-    flex-direction: column;
-    text-align: center;
-    display: none;
-  }
-
-  #nav-menu a {
-    padding: 15px 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
-  }
-
-  #nav-menu.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
 }
 
 .navbar a {
