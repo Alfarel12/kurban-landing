@@ -11,13 +11,18 @@
 <!-- NAVBAR -->
 <header class="navbar">
   <h1>Kurban Berkah</h1>
-  <nav>
+  <nav id="nav-menu">
     <a href="#about">Tentang</a>
     <a href="#profile">Profil</a>
     <a href="#team">Tim</a>
     <a href="#products">Produk</a>
     <a href="#contact">Kontak</a>
   </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <!-- HERO -->
@@ -138,6 +143,16 @@
 <footer>
   <p>© 2025 CV Berkah Kurban Nusantara</p>
 </footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
