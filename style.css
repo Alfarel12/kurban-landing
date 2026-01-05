@@ -10,6 +10,7 @@ body {
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar a {
@@ -113,3 +114,44 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  nav#nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #2e7d32;
+    width: 200px;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav#nav-menu a {
+    margin: 10px 0;
+  }
+
+  nav#nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
