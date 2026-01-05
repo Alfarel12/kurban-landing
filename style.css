@@ -3,20 +3,70 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 .navbar {
   background: #2e7d32;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-.navbar a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
+
+/* MENU DESKTOP */
+#mobileMenu {
+  display: flex;
+  gap: 20px;
+}
+
+#mobileMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ===== MODE HP ===== */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  #mobileMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2e7d32;
+    text-align: center;
+    z-index: 999;
+  }
+
+  #mobileMenu a {
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  #mobileMenu.show {
+    display: flex;
+  }
+}
+
 
 /* HERO */
 .hero {
@@ -112,21 +162,4 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .navbar nav {
-    margin-top: 10px;
-  }
-
-  .navbar nav a {
-    margin: 8px 10px;
-    display: inline-block;
-  }
 }

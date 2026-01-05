@@ -8,16 +8,20 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-  <h1>Kurban Berkah</h1>
-  <nav>
-    <a href="#about">Tentang</a>
-    <a href="#profile">Profil</a>
-    <a href="#team">Tim</a>
-    <a href="#products">Produk</a>
-    <a href="#contact">Kontak</a>
-  </nav>
+  <div class="logo">Kurban Berkah</div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="mobileMenu">
+  <a href="#about">Tentang</a>
+  <a href="#profile">Profil</a>
+  <a href="#team">Tim</a>
+  <a href="#products">Produk</a>
+  <a href="#contact">Kontak</a>
+</nav>
 </header>
 
 <!-- HERO -->
@@ -138,6 +142,12 @@
 <footer>
   <p>© 2025 CV Berkah Kurban Nusantara</p>
 </footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
